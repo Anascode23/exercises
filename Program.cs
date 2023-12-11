@@ -67,37 +67,37 @@ class Program
 
 
 
-/*         
-        Exercise #3
-int[] numbers = new int[5];
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            Console.Write($"Enter the {i + 1} number: ");
-            numbers[i] = Convert.ToInt32(Console.ReadLine());
-        }
-        var duplicates = false;
-        for (int i = 0; i < numbers.Length - 1; i++)
-        {
-            for (int j = i + 1; j < numbers.Length; j++)
-            {
-                if (numbers[i] == numbers[j])
+        /*         
+                Exercise #3
+        int[] numbers = new int[5];
+                for (int i = 0; i < numbers.Length; i++)
                 {
-                    duplicates = true;
-                    break;
+                    Console.Write($"Enter the {i + 1} number: ");
+                    numbers[i] = Convert.ToInt32(Console.ReadLine());
+                }
+                var duplicates = false;
+                for (int i = 0; i < numbers.Length - 1; i++)
+                {
+                    for (int j = i + 1; j < numbers.Length; j++)
+                    {
+                        if (numbers[i] == numbers[j])
+                        {
+                            duplicates = true;
+                            break;
+                        }
+                        if (duplicates)
+                            break;
+                    }
                 }
                 if (duplicates)
-                    break;
-            }
-        }
-        if (duplicates)
-            Console.WriteLine("The number entered has duplicates. Please try again!");
+                    Console.WriteLine("The number entered has duplicates. Please try again!");
 
-        else
-        {
-            Array.Sort(numbers);
-            foreach (var number in numbers)
-                Console.WriteLine(number);
-        } */
+                else
+                {
+                    Array.Sort(numbers);
+                    foreach (var number in numbers)
+                        Console.WriteLine(number);
+                } */
 
 
 
