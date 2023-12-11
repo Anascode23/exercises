@@ -43,24 +43,62 @@ class Program
 
          } */
 
-            //Exercise #2
+        //Exercise #2
 
-      /*   Console.Write("Enter a name to reverse: ");
+        /*   Console.Write("Enter a name to reverse: ");
 
-        var input = Console.ReadLine();
-        
-        if(string.IsNullOrEmpty(input)){
-            Console.WriteLine("Please try again");
+          var input = Console.ReadLine();
+
+          if(string.IsNullOrEmpty(input)){
+              Console.WriteLine("Please try again");
+          }
+          else{
+              char[] reversed = input.ToCharArray();
+              Array.Reverse(reversed);
+              string reversedName = new(reversed);
+
+
+              Console.WriteLine(reversedName);
+          } */
+
+
+
+
+
+
+
+/*         
+        Exercise #3
+int[] numbers = new int[5];
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.Write($"Enter the {i + 1} number: ");
+            numbers[i] = Convert.ToInt32(Console.ReadLine());
         }
-        else{
-            char[] reversed = input.ToCharArray();
-            Array.Reverse(reversed);
-            string reversedName = new(reversed);
+        var duplicates = false;
+        for (int i = 0; i < numbers.Length - 1; i++)
+        {
+            for (int j = i + 1; j < numbers.Length; j++)
+            {
+                if (numbers[i] == numbers[j])
+                {
+                    duplicates = true;
+                    break;
+                }
+                if (duplicates)
+                    break;
+            }
+        }
+        if (duplicates)
+            Console.WriteLine("The number entered has duplicates. Please try again!");
 
-       
-            Console.WriteLine(reversedName);
+        else
+        {
+            Array.Sort(numbers);
+            foreach (var number in numbers)
+                Console.WriteLine(number);
         } */
-        
+
 
 
     }
