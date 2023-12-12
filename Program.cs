@@ -100,6 +100,53 @@ class Program
                 } */
 
 
+        //Exercise #4
+        /* var numbers = new List<int>();
+        Console.WriteLine("Enter a number or type 'done' to stop the program");
+        while (true)
+        {
+            Console.Write("Enter a number: ");
+            var input = Console.ReadLine();
+
+            if (input is "done")
+            {
+                break;
+            }
+            if (int.TryParse(input, out int currentnumber))
+            {
+                var duplicates = false;
+
+                foreach (var number in numbers)
+                {
+                    if (currentnumber == number)
+                    {
+                        duplicates = true;
+                        break;
+                    }
+                }
+                if (duplicates)
+                {       
+                    numbers.Remove(currentnumber);
+                }
+                else
+                {
+                    numbers.Add(currentnumber);
+                }
+
+
+            }
+            else
+                Console.WriteLine("Invaild input");
+
+
+        }
+         foreach (var number in numbers)
+            Console.WriteLine(number); 
+
+
+ */
+
+
 
     }
 }
