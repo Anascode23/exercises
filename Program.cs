@@ -145,8 +145,34 @@ class Program
 
 
  */
+        /* 
+                Console.WriteLine("Enter five numbers separated numbers (e.g 5, 1, 9, 2, 10)");
+                var input = Console.ReadLine();
 
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("Invaild list");
+                } 
 
+                Console.WriteLine(input); */
 
+       /*  var random = new Random();
+        Console.WriteLine("Guess a number between 1 and 10 (You have four chances!)");
+        var input = Convert.ToInt32(Console.ReadLine());
+        var guess = random.Next(1, 10);
+
+        for (int i = 4; i > 1; i--)
+        {
+            Console.Write($"You have {i - 1} tries left: ");
+            Console.ReadLine();
+        } 
+            if (input == guess)
+            {
+                Console.WriteLine("You won!");
+                
+            }
+            else
+            Console.WriteLine($"You lost the number was: {guess}");
+      */   
     }
 }
