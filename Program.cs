@@ -145,7 +145,7 @@ class Program
 
 
  */
-        /* 
+        /*      //Exercise #4 (Loops)
                 Console.WriteLine("Enter five numbers separated numbers (e.g 5, 1, 9, 2, 10)");
                 var input = Console.ReadLine();
 
@@ -156,23 +156,63 @@ class Program
 
                 Console.WriteLine(input); */
 
-       /*  var random = new Random();
-        Console.WriteLine("Guess a number between 1 and 10 (You have four chances!)");
-        var input = Convert.ToInt32(Console.ReadLine());
-        var guess = random.Next(1, 10);
+        /*  var random = new Random();
+         Console.WriteLine("Guess a number between 1 and 10 (You have four chances!)");
+         var input = Convert.ToInt32(Console.ReadLine());
+         var guess = random.Next(1, 10);
 
-        for (int i = 4; i > 1; i--)
-        {
-            Console.Write($"You have {i - 1} tries left: ");
-            Console.ReadLine();
-        } 
-            if (input == guess)
-            {
-                Console.WriteLine("You won!");
-                
-            }
-            else
-            Console.WriteLine($"You lost the number was: {guess}");
-      */   
+         for (int i = 4; i > 1; i--)
+         {
+             Console.Write($"You have {i - 1} tries left: ");
+             Console.ReadLine();
+         } 
+             if (input == guess)
+             {
+                 Console.WriteLine("You won!");
+
+             }
+             else
+             Console.WriteLine($"You lost the number was: {guess}");
+       */
+
+
+
+        /* 
+                //Exercise #5 (Loops)
+                Console.WriteLine("enter numbers ");
+                var input = Convert.ToInt32(Console.ReadLine());
+                var max = 0;
+
+                for (int i = 1; i < input; i++)
+                {
+                    var num = Convert.ToInt32(Console.ReadLine());
+                    if (num > max)
+                    {
+                        max = num;
+                    }
+                }
+                Console.WriteLine(max); */
+
+
+        /*      Exercise #4 (conditions)  
+         Console.Write("Enter the speed of the lane: ");
+          var lane = Convert.ToInt32(Console.ReadLine());
+          Console.Write("Enter the speed of the car: ");
+          var car = Convert.ToInt32(Console.ReadLine());
+
+          if (lane > car)
+          {
+              Console.WriteLine("Ok");
+          }
+          if (lane < car)
+          {
+              var dermitpoint = (car - lane) / 5;
+              if (dermitpoint > 12)
+              {
+                  Console.WriteLine("License Suspended");
+              }
+              else
+                  Console.WriteLine("dermitpoint: " + dermitpoint);
+          } */
     }
 }
