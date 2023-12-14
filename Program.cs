@@ -145,17 +145,54 @@ class Program
 
 
  */
-        /*      //Exercise #4 (Loops)
-                Console.WriteLine("Enter five numbers separated numbers (e.g 5, 1, 9, 2, 10)");
-                var input = Console.ReadLine();
 
-                if (string.IsNullOrWhiteSpace(input))
-                {
-                    Console.WriteLine("Invaild list");
-                } 
 
-                Console.WriteLine(input); */
 
+
+
+
+        //Exercise #5 (Lists)
+        Console.WriteLine("Enter five numbers separated numbers (e.g 5, 1, 9, 2, 10)");
+        var input = Convert.ToInt32(Console.ReadLine());
+        List<int> numbers = [input];
+        var min = 10000;
+        for (int i = 0; i < input; i++)
+        {
+            if (numbers.Count < 5 || numbers.Count == 0)
+            {
+                Console.WriteLine("Invalid List");
+                break;
+            }
+            Console.Write($"Enter the {i + 1} number: ");
+            numbers[i] = Convert.ToInt32(Console.ReadLine());
+            numbers.Add(numbers[i]);
+
+            if (numbers[i] < min)
+            {
+                min = numbers[i];
+            }
+
+
+        }
+
+        if (numbers.Count >= 5)
+        {
+            foreach (var number in numbers)
+                Console.WriteLine(number);
+        }
+
+
+        /* if (string.IsNullOrWhiteSpace(input))
+        {
+            Console.WriteLine("Invaild list");
+        } */
+
+        // Console.WriteLine(input);
+
+
+
+
+        //Exercise #4 (Loops)
         /*  var random = new Random();
          Console.WriteLine("Guess a number between 1 and 10 (You have four chances!)");
          var input = Convert.ToInt32(Console.ReadLine());
@@ -177,22 +214,22 @@ class Program
 
 
 
-         /* 
-                //Exercise #5 (Loops)
-                Console.WriteLine("enter how many numbers you want to enter: ");
-                var input = Convert.ToInt32(Console.ReadLine());
-                var max = 0;
+        /* 
+               //Exercise #5 (Loops)
+               Console.WriteLine("enter how many numbers you want to enter: ");
+               var input = Convert.ToInt32(Console.ReadLine());
+               var max = 0;
 
-                for (int i = 0; i < input; i++)
-                {
-                   Console.Write("Enter a number: ");
-                    var num = Convert.ToInt32(Console.ReadLine());
-                    if (num > max)
-                    {
-                        max = num;
-                    }
-                }
-                Console.WriteLine(max);  */
+               for (int i = 0; i < input; i++)
+               {
+                  Console.Write("Enter a number: ");
+                   var num = Convert.ToInt32(Console.ReadLine());
+                   if (num > max)
+                   {
+                       max = num;
+                   }
+               }
+               Console.WriteLine(max);  */
 
 
         /*      Exercise #4 (conditions)  
