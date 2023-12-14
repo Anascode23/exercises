@@ -177,21 +177,22 @@ class Program
 
 
 
-        /* 
+         /* 
                 //Exercise #5 (Loops)
-                Console.WriteLine("enter numbers ");
+                Console.WriteLine("enter how many numbers you want to enter: ");
                 var input = Convert.ToInt32(Console.ReadLine());
                 var max = 0;
 
-                for (int i = 1; i < input; i++)
+                for (int i = 0; i < input; i++)
                 {
+                   Console.Write("Enter a number: ");
                     var num = Convert.ToInt32(Console.ReadLine());
                     if (num > max)
                     {
                         max = num;
                     }
                 }
-                Console.WriteLine(max); */
+                Console.WriteLine(max);  */
 
 
         /*      Exercise #4 (conditions)  
